@@ -1,0 +1,20 @@
+#danse {
+    text-align: center;
+    animation: psych 1s infinite;
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+}
+
+@keyframes psych {
+    0% {color: rgb(240, 34, 34);}
+    10% {color: rgb(214, 94, 14);}
+    20% {color: rgb(236, 187, 24);}
+    30% {color: rgb(168, 228, 30);}
+    40% {color: rgb(43, 173, 17);}
+    50% {color: rgb(17, 168, 135);}
+    60% {color: rgb(25, 195, 238);}
+    70% {color: rgb(21, 40, 216);}
+    80% {color: rgb(94, 16, 158);}
+    90% {color: rgb(221, 24, 67);}
+    100% {color: rgb(240, 34, 34);}
+}
