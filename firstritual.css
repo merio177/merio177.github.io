@@ -30,6 +30,12 @@ body {
     text-align: center;
 }
 
+.caption {
+    font-family: n45;
+    font-size: 20px;
+    text-align: center;
+}
+
 #ritualcaption {
     content: url("pics/ritualcaption.png");
     width: 50%;
