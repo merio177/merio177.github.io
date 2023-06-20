@@ -1,5 +1,33 @@
 body {
     background-color: black;
+    color: white;
+}
+
+@font-face {
+    font-family: n45;
+    src: url(fonts/N45.otf);
+}
+
+.homeheader {
+    position:fixed;
+    left:0;
+    top:0;
+    width:5%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: n45;
+    padding: 1%;
+}
+
+.footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 #ritualcaption {
