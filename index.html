@@ -1,18 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>merio</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="muitoestilo.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="tantoestilomerio.css">
-    </head>
+<body>
+    <!-- Back to Top -->
+    <a href="#top" class="scroll-top">
+        <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <!-- Header -->
+    <header>
+        <div class="nav">
 
-    <body>
-        <a href="delta.html" id="morebluebox"></a>
-        <a href="intro.html" id="yellowBox"></a>
-        <a href="firstritual.html" id="blueBox"></a>
-        <a href="contact.html" id="redBox"></a>
-        <a href="demo.html" id="greenBox"></a>
-        <div id="boxesOff"></div>
-        <div id="pequenasPartes"></div>
-    </body>
+            <a href="#" class="logo">merio</a>
+
+            <ul class="navbar">
+                <li><a href="#zosma1"><img src="pics/zosma1.png" alt="Zosma icon 1" class="header-icon"></a></li>
+                <li><a href="#zosma2"><img src="pics/zosma2.png" alt="Zosma icon 2" class="header-icon"></a></li>
+                <li><a href="#zosma3"><img src="pics/zosma3.png" alt="Zosma icon 3" class="header-icon"></a></li>
+                <li><a href="#zosma4"><img src="pics/zosma4.png" alt="Zosma icon 4" class="header-icon"></a></li>
+                <li><a href="#zosma5"><img src="pics/zosma5.png" alt="Zosma icon 5" class="header-icon"></a></li>
+            </ul>
+
+            <ul class="side-menu">
+                <li><a href="about.html" class="menu-link">About</a></li>
+                <li><a href="projects.html" class="menu-link">Projects</a></li>
+                <li><a href="contact.html" class="menu-link">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="zosma" id="zosma1">
+        <img src="pics/zosma1.png" alt="Zosma helmet 1" class="zosma-img">
+        <button class="play-btn" onclick="playTrack('track1', 'play-btn-1')">
+            <i class='bx bx-play-circle' id="play-btn-1"></i>
+        </button>
+        <audio src="audio/22M.mp3" id="track1" onended="resetBtn('play-btn-1')"></audio>
+    </section>
+
+    <section class="zosma" id="zosma2">
+        <img src="pics/zosma2.png" alt="Zosma helmet 2" class="zosma-img">
+        <button class="play-btn" onclick="playTrack('track2','play-btn-2')">
+            <i class='bx bx-play-circle' id="play-btn-2"></i>
+        </button>
+        <audio src="audio/1791pc.mp3" id="track2" onended="resetBtn('play-btn-2')"></audio>
+    </section>
+
+    <section class="zosma" id="zosma3">
+        <img src="pics/zosma3.png" alt="Zosma helmet 3" class="zosma-img">
+        <button class="play-btn" onclick="playTrack('track3','play-btn-3')">
+            <i class='bx bx-play-circle' id="play-btn-3"></i>
+        </button>
+        <audio src="audio/A4.mp3" id="track3" onended="resetBtn('play-btn-3')"></audio>
+    </section>
+
+    <section class="zosma" id="zosma4">
+        <img src="pics/zosma4.png" alt="Zosma helmet 4" class="zosma-img">
+        <button class="play-btn" onclick="playTrack('track4','play-btn-4')">
+            <i class='bx bx-play-circle' id="play-btn-4"></i>
+        </button>
+        <audio src="audio/8296K.mp3" id="track4" onended="resetBtn('play-btn-4')"></audio>
+    </section>
+
+    <section class="zosma" id="zosma5">
+        <img src="pics/zosma5.png" alt="Zosma helmet 5" class="zosma-img">
+        <button class="play-btn" onclick="playTrack('track5','play-btn-5')">
+            <i class='bx bx-play-circle' id="play-btn-5"></i>
+        </button>
+        <audio src="audio/06gigaannum.mp3" id="track5" onended="resetBtn('play-btn-5')"></audio>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/merioz177/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/@merio177" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://on.soundcloud.com/TL3Xz" target="_blank"><i class='bx bxl-soundcloud'></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JS link -->
+    <script src="sketch.js"></script>
+
+</body>
+
 </html>

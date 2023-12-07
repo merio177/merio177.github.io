@@ -1,39 +1,79 @@
-<html>
-<title>merio</title>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="firstritual.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merio</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="muitoestilo.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-        <div class="homeheader">
-                <a href="index.html" style="text-decoration: none; color: white;">&lt;</a>
-            </div>
-        <div class="homeheader">
-                <a href="index.html" style="text-decoration: none; color: white;">&lt;</a>
-        </div>
-        <br>
-        <div class="caption">
-                a urjEnsia dash nosash sirqunshtAnsiash reqere foqo indivizivel.
-                <br>
-                shtabelesaum qontaqtu qoum u emisAriu.
-                <br>
-                <br>
-                <div style="text-align:center;">
-                        _________________________________________
-                </div>
-                <br>
-                <br>
-                <div id="links">
-                        <a href="https://www.instagram.com/merioz177/" target="_blank"><img src="pics/iglogo.png"
-                                        height="30" style="margin-right: 10px;"></a>
-                        <a href="https://www.youtube.com/@merio177" target="_blank"><img src="pics/ytlogo.png"
-                                        height="30" style="margin-left: 10px;"></a>
-                        <a href="https://on.soundcloud.com/mJbBv" target="_blank"><img src="pics/sclogo.png" height="35"
-                                        style="margin-left: 15px;"></a>
-                </div>
+    <!-- Back to Top -->
+    <a href="#top" class="scroll-top">
+        <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <!-- Header -->
+    <header>
+        <div class="nav">
 
+            <a href="index.html" class="logo">merio</a>
+
+            <ul class="side-menu">
+                <li><a href="about.html" class="menu-link">About</a></li>
+                <li><a href="projects.html" class="menu-link">Projects</a></li>
+                <li><a href="#" class="menu-link">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="container" id="contact">
+        <!-- Heading -->
+        <h1 class="contact-heading">Contact</h1>
+        <br>
+        <!-- Contact Content -->
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="name" class="name" required>
+            <input type="text" placeholder="email" class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="message" class="message" required></textarea>
+            <span>
+                <input type="submit" value="send" class="send-btn">
+                <span id="empty-error">All fields must be filled!</span>
+            </span>
+        </form>
+        
+        <br><br>
+        <p id="contact-success">Thanks, I'll get back to you soon!</p>
+        
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/merioz177/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/@merio177" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://on.soundcloud.com/TL3Xz" target="_blank"><i class='bx bxl-soundcloud'></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JS link -->
+    <script src="sketch.js"></script>
+    <!-- Emails JS Link -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('rRUvjV4JP_YoXmjxo')
+    </script>
 
 </body>
 
