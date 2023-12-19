@@ -14,6 +14,7 @@ body {
     background-color: black;
     color: white;
     min-height: 100vh;
+    padding-bottom: 10%;
 }
 
 a {
@@ -158,32 +159,6 @@ header {
     position: relative;
 }
 
-
-/* "Back to top" button */
-.scroll-top {
-    position: fixed;
-    bottom: -100%;
-    right: 1.5rem;
-    transition: 0.5s;
-}
-
-.scroll-top .bx {
-    padding: 8px;
-    font-size: 2.5rem;
-    color: white;
-    background: black;
-    border-radius: 0.2rem;
-    transition: 0.3s all linear;
-}
-
-.scroll-top .bx:hover {
-    scale: 1.2;
-}
-
-.scroll-active {
-    bottom: 2rem;
-}
-
 /* Footer */
 .footer {
     /*this is a neat way to center things (first three lines), instead of margin, padding, etc.*/
@@ -242,6 +217,7 @@ header {
 .projects-thumbnail {
     text-align: center;
     padding: 5%;
+    margin: 5%;
     transition: 0.3s all linear;
 }
 
@@ -251,7 +227,8 @@ header {
 }
 
 .projects-img {
-    width: 50%;
+    width: 55%;
+    margin: 5px;
 }
 
 .projects-thumbnail:hover {
@@ -260,9 +237,12 @@ header {
 
 /* Project */
 .project-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    display: flex;
+    align-items:center;
+    flex-direction: column; 
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .project-text {

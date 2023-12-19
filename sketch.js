@@ -1,6 +1,7 @@
 let menu = document.querySelector('.menu-icon');
 let sideMenu = document.querySelector(".side-menu")
 var currentAudio;
+var currentBtn;
 
 menu.onclick = () => {
     menu.classList.toggle('move');
@@ -18,17 +19,20 @@ window.addEventListener('scroll', () => {
     header.classList.toggle("header-active", window.scrollY > 0)
 })
 
-// Scroll to top button
-let scroll = document.querySelector(".scroll-top")
-
-window.addEventListener('scroll', () => {
-    scroll.classList.toggle("scroll-active", window.scrollY >= 400)
-})
-
 // Audio 
 function playTrack(trackID, btnID) {
+
     var audio = document.getElementById(trackID);
     var playBtn = document.getElementById(btnID);
+
+    if (currentAudio != null && currentAudio != audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        currentBtn.classList.replace("bx-pause-circle", "bx-play-circle");
+    }
+
+    currentAudio = audio;
+    currentBtn = playBtn;
 
     if (audio.paused) {
         audio.play();
