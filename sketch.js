@@ -1,5 +1,15 @@
 let menu = document.querySelector('.menu-icon');
-let sideMenu = document.querySelector(".side-menu")
+let sideMenu = document.querySelector('.side-menu');
+
+// let descArrow = document.querySelector('.description-arrow');
+// let contentGrid = document.querySelector('.portfolio-content');
+// let descText = document.querySelector('.portfolio-description');
+
+
+var arrows = document.getElementsByClassName('description-arrow');
+var contents = document.getElementsByClassName('portfolio-content');
+var descriptions = document.getElementsByClassName('portfolio-description');
+
 var currentAudio;
 var currentBtn;
 
@@ -11,6 +21,38 @@ window.onscroll = () => {
     menu.classList.remove('move');
     sideMenu.classList.remove("open-menu");
 }
+
+// descArrow.onclick = () => {
+//     contentGrid.classList.toggle('portfolio-content-open');
+//     descText.classList.toggle('portfolio-description-show');
+//     descArrow.classList.toggle('description-arrow-open');
+// }
+
+
+//Here it uses an IIFE (Immediately Invoked Function Expression)
+//Yeah, no idea either
+//But it works, thanks ChatGPT
+
+for (i = 0; i < arrows.length; i++) {
+    arrows[i].addEventListener("click", (function (index) {
+        return function () {
+            this.classList.toggle('description-arrow-open');
+
+            // var contents = document.getElementsByClassName('portfolio-content');
+            // var descriptions = document.getElementsByClassName('portfolio-description');
+
+            if (contents[index]) {
+                contents[index].classList.toggle('portfolio-content-open');
+            }
+
+            if (descriptions[index]) {
+                descriptions[index].classList.toggle('portfolio-description-show');
+            }
+        };
+    })(i));
+}
+
+
 
 // Header Background change on scroll
 let header = document.querySelector("header");
@@ -57,26 +99,26 @@ function validate() {
     let email = document.querySelector(".email");
     let msg = document.querySelector(".message");
     let sendBtn = document.querySelector(".send-btn");
-    
+
     sendBtn.addEventListener('click', (e) => {
         e.preventDefault();
         if (name.value == "" || email.value == "" || msg.value == "") {
             emptyerror();
         }
         else {
-            sendmail (name.value, email.value, msg.value);
-            success(); 
+            sendmail(name.value, email.value, msg.value);
+            success();
         }
     })
 }
 validate();
 
-function sendmail (name, email, msg) {
-    emailjs.send("service_vj89oed","template_p300205",{
+function sendmail(name, email, msg) {
+    emailjs.send("service_vj89oed", "template_p300205", {
         from_name: name,
         from_email: email,
         message: msg,
-        });
+    });
 }
 
 function emptyerror() {

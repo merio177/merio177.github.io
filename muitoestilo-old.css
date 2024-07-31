@@ -58,18 +58,16 @@ header {
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
-    height: 100px;
 }
 
 .header-icon {
-    width: 80px;
+    width: 100px;
     border-radius: 50%;
-    border: 1px solid white;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .header-icon:hover {
-    scale: 1.2;
+    scale: 1.3;
 }
 
 /* Side menu */
@@ -187,78 +185,30 @@ header {
 .container {
     max-width: 80%; /*percentage or fixed px width? Will the percentage look weird in larger screens?*/
     margin: auto;
-    padding-top: 12%;
-    padding-bottom: 20%;
+    padding-top: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 /* About */
-.portfolio-title {
-    font-size: 50px;
-}
-.portfolio-content {
+.about-content {
     display: grid;
-    grid-template-columns: 1fr max-content 0fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-    transition: 1s all ease;
 }
 
-.portfolio-content-open {
-    grid-template-columns: 1fr max-content 1fr;
-    transition: 1s all ease;
+.about-text {
+    font-size: 1rem;
 }
-
-.description-arrow {
-    font-size: 4rem;
-    opacity: 0.5;
-    width: 20px;
-    margin: 0 0 auto auto;
-    cursor: pointer;
-    transition: 0.2s all ease;
-}
-
-.description-arrow:hover {
-    opacity: 1;
-    transition: 0.7s all ease;
-}
-
-.description-arrow-open {
-    transform: scaleX(-1) translateX(-100%);
-    transition: 0.5s all ease;
-}
-
-.portfolio-description {
-    height: 300px;
-    overflow: hidden;
-    font-size: 0.85rem;
-    margin: 0 auto auto 0;
-    width: 0;
-    opacity: 0;
-}
-
-.portfolio-description-show {
-    overflow: visible;
-    width: 300px;
-    opacity: 1;
-    transition-property: width, opacity;
-    transition-duration: 0.5s, 1s;
-    transition-delay: 0s, 0.5s;
-}
-
 
 .about-heading {
     font-size: 50px;
 }
 
 .about-img {
-    max-width: 560px;
+    width: 100%;
 }
-
-
-/* PROBABLY DELETE, NOT NEEDED ANYMORE */
-
 
 /* Projects */
 .projects-heading {
@@ -309,10 +259,6 @@ header {
     width: 100%;
 }
 
-
-/* UNTIL HERE */
-
-
 /* Contact form*/
 .contact-heading {
     font-size: 50px;
@@ -346,12 +292,11 @@ header {
     padding: 12px;
     background: white;
     cursor: pointer;
-    transition: 0.3s all ease;
 }
 
 .contact-form .send-btn:hover {
-    background: grey;
-    transition: 0.3s all ease;
+    background: rgb(205, 36, 36);
+    transition: 0.3s all linear;
 }
 
 #empty-error {
