@@ -1,11 +1,6 @@
 let menu = document.querySelector('.menu-icon');
 let sideMenu = document.querySelector('.side-menu');
 
-// let descArrow = document.querySelector('.description-arrow');
-// let contentGrid = document.querySelector('.portfolio-content');
-// let descText = document.querySelector('.portfolio-description');
-
-
 var arrows = document.getElementsByClassName('description-arrow');
 var contents = document.getElementsByClassName('portfolio-content');
 var descriptions = document.getElementsByClassName('portfolio-description');
@@ -21,12 +16,6 @@ window.onscroll = () => {
     menu.classList.remove('move');
     sideMenu.classList.remove("open-menu");
 }
-
-// descArrow.onclick = () => {
-//     contentGrid.classList.toggle('portfolio-content-open');
-//     descText.classList.toggle('portfolio-description-show');
-//     descArrow.classList.toggle('description-arrow-open');
-// }
 
 
 //Here it uses an IIFE (Immediately Invoked Function Expression)
