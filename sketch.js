@@ -27,9 +27,6 @@ for (i = 0; i < arrows.length; i++) {
         return function () {
             this.classList.toggle('description-arrow-open');
 
-            // var contents = document.getElementsByClassName('portfolio-content');
-            // var descriptions = document.getElementsByClassName('portfolio-description');
-
             if (contents[index]) {
                 contents[index].classList.toggle('portfolio-content-open');
             }
