@@ -267,9 +267,23 @@ header {
 }
 
 .about-img {
-    width: 65%;
+    width: 40%;
     border-radius: 50%;
-    margin: auto;
+    text-align: center;
+}
+
+.about-text {
+    line-height: 1.5rem;
+}
+
+.about-text-main {
+    font-weight: 700;
+}
+
+.about-text-sub {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 3rem;
 }
 
 
