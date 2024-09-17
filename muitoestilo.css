@@ -399,6 +399,9 @@ header {
     header {
         height: 85px;
     }
+    .container {
+        padding-top: 23%;
+    }
     .portfolio-description {
         width: 65%;
     }
