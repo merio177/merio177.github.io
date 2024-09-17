@@ -395,4 +395,10 @@ header {
     h1 {
         font-size: 30px;
     }
+    header {
+        height: 85px;
+    }
+    .portfolio-description {
+        width: 65%;
+    }
 }
