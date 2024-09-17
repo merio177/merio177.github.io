@@ -27,9 +27,9 @@ for (i = 0; i < arrows.length; i++) {
         return function () {
             this.classList.toggle('description-arrow-open');
 
-            if (contents[index]) {
-                contents[index].classList.toggle('portfolio-content-open');
-            }
+            // if (contents[index]) {
+            //     contents[index].classList.toggle('portfolio-content-open');
+            // }
 
             if (descriptions[index]) {
                 descriptions[index].classList.toggle('portfolio-description-show');
@@ -48,35 +48,38 @@ window.addEventListener('scroll', () => {
 })
 
 // Audio 
-function playTrack(trackID, btnID) {
+// Not being used at the moment
 
-    var audio = document.getElementById(trackID);
-    var playBtn = document.getElementById(btnID);
 
-    if (currentAudio != null && currentAudio != audio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-        currentBtn.classList.replace("bx-pause-circle", "bx-play-circle");
-    }
+// function playTrack(trackID, btnID) {
 
-    currentAudio = audio;
-    currentBtn = playBtn;
+//     var audio = document.getElementById(trackID);
+//     var playBtn = document.getElementById(btnID);
 
-    if (audio.paused) {
-        audio.play();
-        playBtn.classList.replace("bx-play-circle", "bx-pause-circle");
-    }
+//     if (currentAudio != null && currentAudio != audio) {
+//         currentAudio.pause();
+//         currentAudio.currentTime = 0;
+//         currentBtn.classList.replace("bx-pause-circle", "bx-play-circle");
+//     }
 
-    else {
-        audio.pause();
-        playBtn.classList.replace("bx-pause-circle", "bx-play-circle");
-    }
-}
+//     currentAudio = audio;
+//     currentBtn = playBtn;
 
-function resetBtn(btnID) {
-    var button = document.getElementById(btnID);
-    button.classList.replace("bx-pause-circle", "bx-play-circle");
-}
+//     if (audio.paused) {
+//         audio.play();
+//         playBtn.classList.replace("bx-play-circle", "bx-pause-circle");
+//     }
+
+//     else {
+//         audio.pause();
+//         playBtn.classList.replace("bx-pause-circle", "bx-play-circle");
+//     }
+// }
+
+// function resetBtn(btnID) {
+//     var button = document.getElementById(btnID);
+//     button.classList.replace("bx-pause-circle", "bx-play-circle");
+// }
 
 
 // Email JS

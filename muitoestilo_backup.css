@@ -26,20 +26,6 @@ p {
     font-weight: 300;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-iframe {
-    max-width: 800px;
-    max-height: 450px;
-    margin: auto;
-    width: 50vw;
-    height: 28vw;
-    /* width: 560px; */
-    /* height: 450px; */
-}
-
 
 /* Header */
 header {
@@ -131,7 +117,7 @@ header {
     right: -100%;
     width: 300px;
     height: 100vh;
-    background: rgba(10, 10, 10, 0.9);
+    background: rgba(15, 15, 15, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +166,7 @@ header {
     /*percentage or fixed px width? Will the percentage look weird in larger screens?*/
     margin: auto;
     padding-top: 12%;
-    padding-bottom: 14%;
+    padding-bottom: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -191,14 +177,25 @@ header {
     font-size: 50px;
 }
 
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr max-content 0fr;
+    gap: 4rem;
+    transition: 1s all ease;
+}
+
+.portfolio-content-open {
+    grid-template-columns: 1fr max-content 1fr;
+    transition: 1s all ease;
+}
+
 .description-arrow {
     font-size: 4rem;
     opacity: 0.5;
     width: 20px;
-    margin: auto;
+    margin: 0 0 auto auto;
     cursor: pointer;
     transition: 0.2s all ease;
-    transform: translateX(-100%);
 }
 
 .description-arrow:hover {
@@ -207,30 +204,26 @@ header {
 }
 
 .description-arrow-open {
-    transform: scaleY(-1) translateX(-100%);
+    transform: scaleX(-1) translateX(-100%);
     transition: 0.5s all ease;
 }
 
 .portfolio-description {
-    text-align: center;
-    /* overflow: hidden; */
+    height: 300px;
+    overflow: hidden;
     font-size: 0.85rem;
-    margin: auto;
-    width: 50%;
-    height: 0;
+    margin: 0 auto auto 0;
+    width: 0;
     opacity: 0;
-    transition-property: height, opacity;
-    transition-duration: 0.5s, 0.3s;
-    transition-delay: 0.2s, 0s;
 }
 
 .portfolio-description-show {
-    /* overflow: visible; */
-    height: 300px;
+    overflow: visible;
+    width: 300px;
     opacity: 1;
-    transition-property: height, opacity;
+    transition-property: width, opacity;
     transition-duration: 0.5s, 1s;
-    transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.5s;
 }
 
 
@@ -246,7 +239,7 @@ header {
 }
 
 .about-img {
-    width: 170px;
+    width: 40%;
     border-radius: 50%;
     text-align: center;
 }
@@ -264,6 +257,62 @@ header {
     font-weight: 300;
     margin-left: 3rem;
 }
+
+
+/* PROBABLY DELETE, NOT NEEDED ANYMORE */
+
+
+/* Projects */
+.projects-heading {
+    font-size: 50px;
+    text-align: center;
+}
+
+.projects-thumbnail {
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    transition: 0.3s all linear;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects-img {
+    width: 55%;
+    margin: 5px;
+}
+
+.projects-thumbnail:hover {
+    scale: 1.1;
+}
+
+/* Project */
+.project-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.project-text {
+    font-size: 1rem;
+}
+
+.project-heading {
+    font-size: 50px;
+}
+
+.project-img {
+    width: 100%;
+}
+
+
+/* UNTIL HERE */
 
 
 /* Contact form*/
@@ -318,8 +367,7 @@ header {
 }
 
 /* Play buttons */
-/* Not being used at the moment */
-/* .play-btn {
+.play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -336,56 +384,6 @@ header {
 
 .play-btn:hover {
     opacity: 70%;
+    /* text-shadow: 0 0 10px rgba(200,200,200,0.7); */
     transition: 0.6s all ease;
-} */
-
-
-
-/* Make it responsive */
-@media (max-width:1150px) {
-    header {
-        padding: 10px 10px;
-        height: 110px;
-    }
-    section {
-        padding: 50px 4%;
-    }
-    .header-icon {
-        width: 65px;
-    }
-}
-
-@media (max-width:1000px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-    .container {
-        padding-top: 20%;
-    }
-}
-
-@media (max-width:700px) {
-    .navbar {
-        display: none;
-    }
-    header {
-        padding: 30px 30px;
-    }
-    .portfolio-description {
-        font-size: 0.7rem;
-    }
-    .about-text {
-        font-size: 0.8rem;
-    }
-    .about-text-sub {
-        font-size: 0.7rem;
-    }
-    .about-img {
-        width: 140px;
-    }
 }
