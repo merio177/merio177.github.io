@@ -33,6 +33,7 @@ h1 {
 iframe {
     max-width: 800px;
     max-height: 450px;
+    min-height: 200px;
     margin: auto;
     width: 50vw;
     height: 28vw;
@@ -387,5 +388,11 @@ header {
     }
     .about-img {
         width: 140px;
+    }
+}
+
+@media (max-width:450px) {
+    h1 {
+        font-size: 30px;
     }
 }
