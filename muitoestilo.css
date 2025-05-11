@@ -168,16 +168,13 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 100;
+    font-size: 11px;
 }
 
 .footer-links a {
     font-size: 2rem;
     font-weight: 400;
     color: white;
-}
-
-.footer-copyright {
-    font-size: 10px;
 }
 
 /* General container */
