@@ -176,6 +176,10 @@ header {
     color: white;
 }
 
+.footer-copyright {
+    font-size: 10px;
+}
+
 /* General container */
 .container {
     max-width: 80%;
