@@ -238,14 +238,12 @@ header {
 
 
 /* About */
-.about-title {
-    font-size: 50px;
-}
-
-.about-content {
+.cv-content {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: auto;
 }
 
 .about-img {
@@ -254,15 +252,15 @@ header {
     text-align: center;
 }
 
-.about-text {
+.cv-col {
     line-height: 1.5rem;
 }
 
-.about-text-main {
+.cv-text-bold {
     font-weight: 700;
 }
 
-.about-text-sub {
+.cv-text {
     font-size: 0.9rem;
     font-weight: 300;
     margin-left: 3rem;
