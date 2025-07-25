@@ -238,7 +238,7 @@ header {
 
 
 /* About */
-.cv-content {
+.about-content {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -246,10 +246,32 @@ header {
     align-items: auto;
 }
 
+.about-img-container {
+    margin: auto;
+}
+
 .about-img {
     width: 170px;
     border-radius: 50%;
     text-align: center;
+}
+
+.about-text {
+    font-weight: 300;
+}
+
+.cv-separator {
+    width: 20%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cv-content {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: auto;
 }
 
 .cv-col {
